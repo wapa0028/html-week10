@@ -64,7 +64,7 @@ h1{
 
 h2{
     font-size:1.5rem;
-    padding:20px 0 10px;
+    padding:40px 0 10px;
 }
 
 .container{
@@ -79,6 +79,10 @@ nav ul li{
 .sidebarbox{
     background:rgb(128,128,128);
     border:2px solid rgb(50,50,50);
+}
+
+#content p{
+    padding:10px;
 }
 
 #rainbow div{ height:30px; }
@@ -144,3 +148,14 @@ nav ul{
 #rainbow div{
     flex-grow:1;
 }
+
+#content{
+    display:flex;
+}
+
+/* short-hand flex: grow, shrink, basis */
+#content p:nth-child(1){ flex: 1 1 0; }
+#content p:nth-child(2){ flex: 3 1 0; }
+#content p:nth-child(3){ flex: 4 1 0; }
+#content p:nth-child(4){ flex: 2 1 0; }
+#content p:nth-child(5){ flex: 1 1 0; }
