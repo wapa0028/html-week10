@@ -50,3 +50,97 @@ table {
 /***********************************************************
 				        DEFAULTS
 ***********************************************************/
+
+html{
+    font-size:16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size:2.2rem;
+    font-weight:bold;
+    padding:10px 0 15px;
+}
+
+h2{
+    font-size:1.5rem;
+    padding:20px 0 10px;
+}
+
+.container{
+    width:1024px;
+    margin:0 auto;
+}
+
+nav ul li{
+    padding:10px;
+}
+
+.sidebarbox{
+    background:rgb(128,128,128);
+    border:2px solid rgb(50,50,50);
+}
+
+#rainbow div{ height:30px; }
+#re{ background: red; }
+#or{ background: orange; }
+#ye{ background: yellow; }
+#gr{ background: green; }
+#bl{ background: blue; }
+#in{ background: indigo; }
+#vi{ background: violet; }
+
+/***********************************************************
+				        Flexbox
+***********************************************************/
+
+.bodyflex{
+    display:flex;
+}
+
+main{
+    width:75%;
+}
+
+aside{
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    justify-content:stretch;
+}
+
+aside .sidebarbox{
+    flex-basis:1;
+    flex-grow:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sidebarbox span{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+#fish{
+    display:flex;
+}
+
+#fish img{
+    width:100%;
+}
+
+nav ul{    
+    display:flex;
+    background:rgb(220, 220, 220);
+    justify-content:space-around;
+}
+
+#rainbow{
+    display:flex;
+    justify-content:stretch;
+}
+
+#rainbow div{
+    flex-grow:1;
+}

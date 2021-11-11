@@ -11,20 +11,53 @@
 
 <body>
     <div class="container">
-        <article>
-            <h2>Weird Fish</h2>
-            <div class="flexer">
-                <div class="image-holder">
-                    <img src="images/pancake-batfish.jpg" alt="Pancake Batfish">
-                </div>
-                <div class="image-holder">
-                    <img src="images/blobfish.jpg" alt="Blobfish">
-                </div>
-                <div class="image-holder">
-                    <img src="images/barreleye-fish.jpg" alt="Barreleye Fish">
-                </div>
-            </div>
-        </article>
+        <header>
+            <h1>Flexbox Playground</h1>
+            <nav>
+                <ul>
+                    <li><a href="#fish">Fish</a></li>
+                    <li><a href="#rainbow">Rainbow</a></li>
+                    <li><a href="#fish">Fish</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="bodyflex">
+            <main>
+                <article>
+                    <h2>Weird Fish</h2>
+                    <div id="fish">
+                        <div class="image-holder">
+                            <img src="images/pancake-batfish.jpg" alt="Pancake Batfish">
+                        </div>
+                        <div class="image-holder">
+                            <img src="images/blobfish.jpg" alt="Blobfish">
+                        </div>
+                        <div class="image-holder">
+                            <img src="images/barreleye-fish.jpg" alt="Barreleye Fish">
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>Rainbow</h2>
+                    <div id="rainbow">
+                        <div id="re"></div>
+                        <div id="or"></div>
+                        <div id="ye"></div>
+                        <div id="gr"></div>
+                        <div id="bl"></div>
+                        <div id="in"></div>
+                        <div id="vi"></div>
+                    </div>
+                </article>
+            </main>
+
+            <aside>
+                <div class="sidebarbox"><span>1</span></div>
+                <div class="sidebarbox"><span>2</span></div>
+                <div class="sidebarbox"><span>3</span></div>
+            </aside>
+        </div>
     </div>
 </body>
 </html>
